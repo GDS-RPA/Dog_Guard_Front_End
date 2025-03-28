@@ -1,0 +1,314 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #333;
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 300px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 2px;
+    border: 1px solid #ddd;
+    text-align: center !important;
+}
+
+table th {
+    background-color: #f0f0f0;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.pagination {
+    margin-top: 30px;
+    margin-left: 75%;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination .page-item {
+    margin: 0 5px;
+}
+
+.pagination .page-link {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination .page-link:hover {
+    background-color: #f1f1f1;
+}
+
+.pagination .active .page-link {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+.button-container {
+    display: flex;
+    gap: 5px; /* Adds 5px gap between the buttons */
+    justify-content: center !important;
+}
+
+.button-container button{
+    border-radius: 5px;
+}
+
+/* Popup Css */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    width: 600px;
+    max-height: 80vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-header {
+    padding: 20px;
+    font-size: 1.5em;
+    text-align: centter;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.popup-body {
+    padding: 20px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.popup-body label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: 500;
+}
+
+.popup-body input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.popup-footer {
+    padding: 20px;
+    border: 2px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+.btn-close {
+    background: #869196;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px !important;
+    cursor: pointer;
+}
+
+.btn-save {
+    background: #3c8dbc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px !important;
+    cursor: pointer;
+}
+
+.btn-save:hover {
+    background: #0056b3;
+}
+
+.popup-body select,
+.popup-body input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    appearance: none;
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari và Chrome */
+    background-color: white;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns%3D%27http%3A//www.w3.org/2000/svg%27 width%3D%2710%27 height%3D%276%27 viewBox%3D%270 0 10 6%27%3E%3Cpath fill%3D%27%23000000%27 d%3D%27M0 0l5 6 5-6H0z%27/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+}
+
+.popup-body select {
+    height: 50px; /* Điều chỉnh chiều cao để khớp */
+}
+
+.popup-body input.changed,
+.popup-body select.changed {
+    color: red;
+}
+
+.saveUpdate{
+    background: #3c8dbc;
+    width: 20%;
+    border-radius: 5px;
+}
+ 
+.cancelUpdate{
+    background: #858686;
+    width: 20%;
+    border-radius: 5px;
+}
+
+/* search */
+.searchADD{
+    display: flex;
+    /* margin-left: 37%; */
+}
+
+.addAccount{
+    width: 100% !important;
+    height: auto;
+}
+
+.search-container {
+    position: relative;
+    margin-left: 76.7%;
+    height: auto;
+} 
+
+.search-input {
+    padding: 10px 40px 10px 15px;  /* Padding to make space for the icon */
+    width: 100%;  /* Full width of the container */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #007bff;  /* Change border color on focus */
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;  /* Adjust for positioning of the icon */
+    transform: translateY(-50%);  /* Vertically center the icon */
+    color: #ccc;  /* Icon color */
+    font-size: 16px;  /* Icon size */
+    margin-left: 85%;
+}
+
+
+/* Container của select box */
+.select-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Label cho select box */
+.select-container label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Select box */
+.select-container select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 68px;
+    height: 35px;
+}
+
+/* Hiệu ứng khi hover vào select box */
+.select-container select:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Hiệu ứng khi focus vào select box */
+.select-container select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.75);
+}
+
+/* Tăng kích thước cho thiết bị nhỏ */
+@media (max-width: 768px) {
+    .select-container select {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}

@@ -1,0 +1,91 @@
+/* RequestOT.css */
+
+.request-ot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5; /* Màu nền nhẹ giống Google */
+}
+
+.request-ot-form-wrapper {
+    width: 100%;
+    max-width: 500px; /* Giới hạn chiều rộng của form */
+    padding: 20px;
+    background-color: #ffffff; /* Nền trắng */
+    border-radius: 8px; /* Bo góc */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    font-family: Arial, sans-serif; /* Font chữ nhẹ nhàng */
+}
+
+.request-ot-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.request-ot-form-group {
+    margin-bottom: 15px;
+}
+
+.request-ot-label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.request-ot-input,
+.request-ot-textarea {
+    width: 100% !important;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.request-ot-input:focus,
+.request-ot-textarea:focus {
+    border-color: #4285f4; /* Màu xanh khi focus */
+    outline: none;
+    box-shadow: 0 0 3px rgba(66, 133, 244, 0.5);
+}
+
+.request-ot-button {
+    display: block;
+    width: 100%;
+    background-color: #4285f4; /* Màu xanh Google */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.request-ot-button:hover {
+    background-color: #357ae8; /* Màu xanh đậm khi hover */
+}
+
+.request-ot-note {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.input-error {
+    border: 1px solid red !important;
+}
+
+.error-text {
+    color: red !important;
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
